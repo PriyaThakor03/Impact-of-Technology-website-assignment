@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Computer Ethics</title>
+<link href="styles1.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="header">
+	<h1>Computing Ethics</h1>
+	<div id="right-column">
+	<img src="logo.jpg" alt="logo" style="width:125px;height:125px;">
+	</div>
+</div>
+
+<div class="topnav">
+	<a href="about us.html">About Us</a>
+	<a href="computers in the workforce.html">Computers in the Workforce</a>
+	<a href="automated decision making.html">Automated Decision Making</a>
+	<a href="artificial intelligence.html">Artificial Intelligence</a>
+	<a href="environmental effects.html">Environmental Effects</a>
+	<a href="ethical issues.html">Ethical Issues</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>About Us</h2>
+    <p>We are an environmentalist group, providing information about ethical issues arising from the use of computers now and in the future. 
+	Our information will be regarding Computers in the workforce, Automated Decision Making, Artificial Intelligence, Environmental Effects, and Ethical issues.</p>
+  </div>
+  
+  <form id=feedack action = "MAILTO:222520@student.wqe.ac.uk" method="post"
+			enctype"text/plain">
+		<br> <h2> Feedback Form </h2>
+		First Name:<br>
+		<input type="text" name="firstname"><br>
+		Last Name:<br>
+		<input type="text" name="lastname"><br>
+		Email:<br>
+		<input type="text" name="email"><br>
+		Comments:<br>
+		<textarea rows="3" cols="30" name="comments">
+		</textarea><br><br>
+		<button type="button" onclick="validateForm()">Check</button>
+		<input type="submit" value ="Submit"><br><br>
+	</form>
+		<script>
+		function validateForm() 
+		{
+			var x = document.forms["feedback"]["firstname"].value;
+			if (x == "") 
+		{
+			alert("name must be filled out");
+			return false;
+		}
+		}
+		</script>
+</div>
+
+</body>
+</html>
